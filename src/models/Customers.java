@@ -8,24 +8,24 @@ package models;
  *
  * @author Tcp35
  */
-public class Customers extend Person {
-     private String customersCode ;
+public class Customers extends Person {
+   private String customerCode;
 
-    public Customerss(String customersCode, String name, String phoneNumber, String mail) {
-        super(name, phoneNumber, mail);
-        this.customersCode = customersCode;
+    public Customers() {
     }
 
-    public Customerss() {
+    public Customers(String customerCode, String name, String phoneNumber, String email) {
+        super(name, phoneNumber, email);
+        this.customerCode = customerCode;
     }
 
-    public String getCustomersCode() {
-        return customersCode;
+    public String getCustomerCode() {
+        return customerCode;
     }
 
-    public void setCustomersCode(String customersCode) {
-        this.customersCode = customersCode;
+    public void setCustomerCode(String customerCode) {
+        this.customerCode = customerCode;
     }
    
-    
+
 }

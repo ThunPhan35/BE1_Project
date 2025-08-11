@@ -5,12 +5,14 @@
 package view;
 
 import controller.CustomerController;
+import controller.MenuController;
 import javax.xml.transform.OutputKeys;
 import utils.Input;
 
 public class Menu {
     Input input = new Input(); 
     CustomerController customerController = new CustomerController();
+    MenuController menuController = new MenuController();
     public void mainMenu(){
         int choice;
         do{
@@ -38,7 +40,12 @@ public class Menu {
                 case 3:
                     customerController.findCustomerByKeyword();
                     break;
-                
+                 case 4:
+                    menuController.displayMenu();
+                    break;
+                 case 5:
+                    
+                    break;
                 default:
                   System.out.println("Goodbye Boss, Exiting...");
             }

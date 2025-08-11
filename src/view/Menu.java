@@ -32,9 +32,15 @@ public class Menu {
                 case 1:
                     customerController.registerCustomer();
                     break;
-                    
+                case 2:
+                    customerController.updateCustomer();
+                    break;
+                case 3:
+                    customerController.findCustomerByKeyword();
+                    break;
+                
                 default:
-                  System.out.println("Goodbye Exiting...");
+                  System.out.println("Goodbye Boss, Exiting...");
             }
         }while(choice >=1 && choice < 9);
         

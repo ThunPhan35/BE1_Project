@@ -1,29 +1,35 @@
-Nguyên lý tổ chức dự án
+Dự án được phát triển bằng Java, theo mô hình MVC (Model – View – Controller) kết hợp với các thư viện tiện ích để quản lý thông tin đặt tiệc truyền thống.
+Ứng dụng hỗ trợ quản lý khách hàng, thực đơn, đơn đặt tiệc, đồng thời cung cấp khả năng nhập liệu, kiểm tra ràng buộc và xuất báo cáo.
 
-Dự án quản lý nhà hàng được phát triển bằng ngôn ngữ Java, dựa trên ý tưởng mô hình MVC (Model – View – Controller) và có bổ sung thêm một số thành phần hỗ trợ để đảm bảo khả năng mở rộng, tái sử dụng và dễ bảo trì.
+Với cấu trúc :
+BE1
+│── controller/       # Các lớp điều khiển luồng xử lý
+│   ├── CustomerController.java
+│   ├── MenuController.java
+│   └── OrderController.java
+│
+│── models/           # Các lớp mô hình dữ liệu
+│   ├── Customers.java
+│   ├── FeastMenu.java
+│   ├── Orders.java
+│   └── Person.java
+│
+│── resources/        # Tài nguyên dữ liệu
+│   └── FeastMenu.csv
+│
+│── utils/            # Các lớp tiện ích chung của chương trình
+│   ├── FileUtils.java
+│   ├── Input.java
+│   └── Validation.java
+│
+│── view/             # Giao diện hiển thị dữ liệu và tương tác với khách hàng
+│   └── Menu.java
 
-Cấu trúc thư mục
 
-models → chứa các lớp biểu diễn dữ liệu quản lý (bảng dữ liệu).
+Lợi ích khi ứng dụng hệ thống:
 
-models/rules → chứa các lớp xử lý logic và quy tắc ràng buộc dữ liệu.
-
-views → quản lý cách dữ liệu được hiển thị cho người dùng cũng như xử lý nhập liệu.
-
-controllers → điều phối luồng xử lý, quy định cách dữ liệu được thao tác và truyền giữa Model và View.
-
-interfaces → chứa các giao diện (interface) nhằm định nghĩa cấu trúc chung cho đối tượng, hỗ trợ kế thừa và quản lý thống nhất.
-
-Lợi ích khi ứng dụng hệ thống Traditional Feast Order Management
-
-Quản lý hiệu quả: Giúp theo dõi, tổ chức và xử lý thông tin đặt tiệc truyền thống (số lượng bàn, thực đơn, khách hàng, chi phí) một cách hệ thống.
-
-Giảm sai sót: Hạn chế các lỗi do quản lý thủ công như nhầm lẫn đơn hàng, trùng lặp dữ liệu hoặc quên thông tin khách hàng.
-
-Tiết kiệm thời gian: Tự động hóa nhiều công đoạn từ nhập liệu, sắp xếp bàn tiệc, tính toán chi phí đến lập báo cáo.
-
-Linh hoạt và mở rộng: Dễ dàng tùy chỉnh để phù hợp với nhiều loại tiệc hoặc sự kiện khác nhau, mở rộng tính năng khi quy mô nhà hàng tăng lên.
-
-Hỗ trợ ra quyết định: Cung cấp báo cáo nhanh chóng và chính xác (ví dụ: thống kê thực đơn được chọn nhiều nhất, chi phí trung bình theo loại tiệc), từ đó giúp quản lý đưa ra quyết định kinh doanh hợp lý.
-
-Cải thiện trải nghiệm khách hàng: Quá trình đặt tiệc nhanh chóng, chuyên nghiệp và minh bạch giúp tăng sự hài lòng của khách hàng.
++Quản lý hiệu quả thông tin khách hàng, thực đơn và đơn đặt tiệc.
++Giảm sai sót do loại bỏ quản lý thủ công.
++Tiết kiệm thời gian nhờ tự động hóa các thao tác nhập, tính toán và báo cáo.
++Mở rộng linh hoạt khi số lượng khách hàng và thực đơn tăng lên.
++Cải thiện trải nghiệm khách hàng với quy trình đặt tiệc nhanh gọn, chuyên nghiệp.

@@ -5,7 +5,9 @@
 package utils;
 
 import java.util.ArrayList;
+import java.util.List;
 import models.Customers;
+import models.FeastMenu;
 
 public class Validation {
    
@@ -19,6 +21,14 @@ public class Validation {
         }
         return check;
     }
-    
-    
+    public boolean isValidOrderCode(String code, List<FeastMenu> feastMenus) {
+        boolean check = false;
+        for (FeastMenu feastMenu : feastMenus) {
+            if (feastMenu.getCode().equals(code)) {
+                check = false;
+            }
+        }
+        return check;
+    }
 }
+

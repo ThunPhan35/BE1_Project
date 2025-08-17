@@ -5,12 +5,9 @@
 package models;
 
 import java.time.LocalDate;
+import java.io.Serializable;
 
-/**
- *
- * @author Tcp35
- */
-public class Orders {
+public class Order implements Serializable {
     private String orderId;
     private Customers customer;
     private FeastMenu feastMenu;
@@ -18,10 +15,10 @@ public class Orders {
     private float totalPrince;
     private LocalDate orderDate;
 
-    public Orders() {
+    public Order() {
     }
 
-    public Orders(String orderId, Customers customer, FeastMenu feastMenu, int numberOfTable, float totalPrince, LocalDate orderDate) {
+    public Order(String orderId, Customers customer, FeastMenu feastMenu, int numberOfTable, float totalPrince, LocalDate orderDate) {
         this.orderId = orderId;
         this.customer = customer;
         this.feastMenu = feastMenu;

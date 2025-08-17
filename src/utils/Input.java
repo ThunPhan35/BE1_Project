@@ -30,4 +30,26 @@ public class Input {
     }while(!inputString.matches(regex));
         return inputString;
     }
+      public String inputString(String output) {
+        String inputString;
+        do {            
+            System.out.println(output);
+            inputString = sc.nextLine();
+        } while (inputString.isEmpty());
+        return inputString;
+    }
+    
+    public int inputInt(String output) {
+        int number;
+        do {            
+            System.out.println(output);
+            number = Integer.parseInt(sc.nextLine());
+            if (number <= 0) {
+                System.out.println("Number must be greater than 0!");
+            }
+        } while (number <= 0);
+        return number;
+    }
 }
+
+

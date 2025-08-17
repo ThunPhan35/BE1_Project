@@ -6,7 +6,7 @@ BE1_Traditional Feast Order Management
 
 ── controller/     
 
-# Các lớp điều khiển luồng xử lý
+Các lớp điều khiển luồng xử lý
 │   ├── CustomerController.java
 │   ├── MenuController.java
 │   └── OrderController.java
@@ -14,7 +14,7 @@ BE1_Traditional Feast Order Management
 
 ── models/      
 
-# Các lớp mô hình dữ liệu
+ Các lớp mô hình dữ liệu
 │   ├── Customers.java
 │   ├── FeastMenu.java
 │   ├── Orders.java
@@ -23,13 +23,13 @@ BE1_Traditional Feast Order Management
 
 ── resources/   
 
-# Tài nguyên dữ liệu
+ Tài nguyên dữ liệu
 │   └── FeastMenu.csv
 
 
 ── utils/          
 
-# Các lớp tiện ích chung của chương trình
+ Các lớp tiện ích chung của chương trình
 │   ├── FileUtils.java
 │   ├── Input.java
 │   └── Validation.java
@@ -37,11 +37,11 @@ BE1_Traditional Feast Order Management
 
 
 ── view/
-# Giao diện hiển thị dữ liệu và tương tác với khách hàng
+ Giao diện hiển thị dữ liệu và tương tác với khách hàng
 │   └── Menu.java
 
 
-Lợi ích khi ứng dụng hệ thống:
+#Lợi ích khi ứng dụng hệ thống:
 
 +Quản lý hiệu quả thông tin khách hàng, thực đơn và đơn đặt tiệc.
 +Giảm sai sót do loại bỏ quản lý thủ công.

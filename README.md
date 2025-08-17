@@ -3,30 +3,41 @@ Dự án được phát triển bằng Java, theo mô hình MVC (Model – View 
 
 Với cấu trúc :
 BE1_Traditional Feast Order Management
-│── controller/       # Các lớp điều khiển luồng xử lý
+
+── controller/     
+
+# Các lớp điều khiển luồng xử lý
 │   ├── CustomerController.java
 │   ├── MenuController.java
 │   └── OrderController.java
 
 
-│── models/           # Các lớp mô hình dữ liệu
+── models/      
+
+# Các lớp mô hình dữ liệu
 │   ├── Customers.java
 │   ├── FeastMenu.java
 │   ├── Orders.java
 │   └── Person.java
 
 
-│── resources/        # Tài nguyên dữ liệu
+── resources/   
+
+# Tài nguyên dữ liệu
 │   └── FeastMenu.csv
 
 
-│── utils/            # Các lớp tiện ích chung của chương trình
+── utils/          
+
+# Các lớp tiện ích chung của chương trình
 │   ├── FileUtils.java
 │   ├── Input.java
 │   └── Validation.java
 
 
-│── view/             # Giao diện hiển thị dữ liệu và tương tác với khách hàng
+
+── view/
+# Giao diện hiển thị dữ liệu và tương tác với khách hàng
 │   └── Menu.java
 
 
